@@ -1,0 +1,90 @@
+/* 
+  Andy Bell Modern CSS Reset
+  Referência: https://piccalil.li/blog/a-modern-css-reset/
+*/
+
+/* Remove margens e paddings padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* Define o modelo de caixa para todos os elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove comportamentos padrão de lista */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Configurações base do HTML e Body */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove underlines de links que não têm classe */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Imagens, pictures e videos responsivas */
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Herança de fonte em inputs e buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animações para usuários que preferem movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Elementos que não podem ser vazios */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Remove espaços em branco desnecessários */
+body,
+html {
+  height: 100%;
+}

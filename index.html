@@ -1,44 +1,65 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>SyntaxWear — Home</title> 
+  <title>SyntaxWear -Tênis e Sneakers online</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
+
+  <link rel="stylesheet" href="./css/components/header.css">
+ 
+
 </head>
-<body> 
+
+<body>
   <!-- HEADER COM LOGO E NAVEGAÇÃO -->
-  <header class="site-header">
-    <div class="container">
-      <!-- Logo -->
-      <div class="logo">
-        SyntaxWear
-      </div>
+  <header class="header">
+
+    <h1 class="logo">
+      <a href="/" title="SyntaxWear -Tênis e Sneakers online">
+        <img src="./imagens/logo/logo.svg" alt="SyntaxWear -Tênis e Sneakers online">
+      </a>
+    </h1>
+
+    <!-- Navegação -->
+    <nav class="nav-center" aria-label="Categorias Princiapis">
+      <ul>
+        <li><a href="#">Maculino</a></li>
+        <li><a href="#">Feminino</a></li>
+        <li><a href="#">Outlet</a></li>
+      </ul>
+    </nav>
+
+    <!-- Menu secundário à direita -->
+    <nav class="nav-right" aria-label="Menu secundário">
+      <ul>
+        <li><a href="#">Nossas lojas</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li>
+          <a href="#" aria-label="Conta">
+            <img src="./imagens/icons/conta.svg" alt="Conta" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Ajuda">
+            <img src="./imagens/icons/ajuda.svg" alt="Ajuda" />
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Carrinho">
+            <img src="./imagens/icons/carrinho.svg" alt="Carrinho">
+          </a>
+        </li>
+      </ul>
+    </nav>
 
 
-      
-      <!-- Navegação -->
-      <nav class="main-nav">
-        <a href="#">Masculino</a>
-        <a href="#">Feminino</a>
-        <a href="#">Outlet</a>
-        <a href="#">Novidades</a>
-      </nav>
-
-      <!-- Ações do Header -->
-      <div class="header-actions">
-        <form class="search" action="#" role="search">
-          <input type="search" placeholder="Buscar produtos...">
-        </form>
-        <div class="icons">
-          <button class="icon-btn">Conta</button>
-          <button class="icon-btn">Carrinho</button>
-        </div>
-      </div>
-    </div>
   </header>
+
+  <!--  -->
 
   <!-- CONTEÚDO PRINCIPAL -->
   <main>
@@ -58,7 +79,9 @@
     </section>
   </main>
 
-  <!-- FOOTER COM INFORMAÇÕES E LINKS -->
+  <!-- 
+
+   FOOTER COM INFORMAÇÕES E LINKS -->
   <footer class="site-footer">
     <div class="container">
       <!-- Informações de contato -->
@@ -72,5 +95,10 @@
       </section>
     </div>
   </footer>
+
+  <!--  -->
+
+
 </body>
+
 </html>

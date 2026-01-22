@@ -5,25 +5,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SyntaxWear -Tênis e Sneakers online</title>
+  <meta name="description" content="Compre os melhores tênis e sneakers online 
+  na SyntaxWear. Econtre modelos exclusivos, ofertas imperdíveis e frete grátis para todo o Brasil.">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="./css/components/header.css">
   <link rel="stylesheet" href="./css/components/hero.css">
- 
+  <link rel="stylesheet" href="./css/components/product-category.css">
 
 </head>
 
 <body>
   <!-- HEADER COM LOGO E NAVEGAÇÃO -->
   <header class="header">
-
     <h1 class="logo">
       <a href="/" title="SyntaxWear -Tênis e Sneakers online">
         <img src="./imagens/logo/logo.svg" alt="SyntaxWear -Tênis e Sneakers online">
       </a>
     </h1>
-
     <!-- Navegação -->
     <nav class="nav-center" aria-label="Categorias Princiapis">
       <ul>
@@ -32,7 +33,6 @@
         <li><a href="#">Outlet</a></li>
       </ul>
     </nav>
-
     <!-- Menu secundário à direita -->
     <nav class="nav-right" aria-label="Menu secundário">
       <ul>
@@ -55,26 +55,52 @@
         </li>
       </ul>
     </nav>
-  </header>
-
-   <!-- CONTEÚDO PRINCIPAL -->
+  </header> 
+  <!-- CONTEÚDO PRINCIPAL -->
   <main>
-    <section class="hero-section">  
+    <section class="hero-section">
       <div class="hero-overlay">
-      <div class="hero-content">
-        <span class="hero-subtitle">Krypton one</span>
-        <h2 class="hero-title">Transforme qualquer passo em presença</h2>
-        <div class="hero-buttons">
-          <a class="btn btn-outline" href="#">Ver modelos</a>
-          <a class="btn btn-filled" href="#">Comprar</a>
+        <div class="hero-content">
+          <span class="hero-subtitle">Krypton one</span>
+          <h2 class="hero-title">Transforme qualquer passo em presença</h2>
+          <div class="hero-buttons">
+            <a class="btn btn-outline" href="#">Ver modelos</a>
+            <a class="btn btn-filled" href="#">Comprar</a>
+          </div>
         </div>
-      </div>
       </div>
     </section>
 
     <!-- SEÇÃO DE CATEGORIAS DE TÊNIS -->
-    <section class="categories">
+    <section class="categories-section"> 
       <!-- Categorias de tênis serão adicionadas aqui -->
+      <div class="category-card casual">
+        <a href="#" class="category-link">
+          <span class="overlay"></span>
+          <span class="category-name btn btn-outline">Casual</span>
+        </a>
+      </div>
+
+      <div class="category-card esporte">
+        <a href="#" class="category-link">
+          <span class="overlay"></span>
+          <span class="category-name btn btn-outline">Esporte</span>
+        </a>
+      </div>
+
+      <div class="category-card moderno">
+        <a href="#" class="category-link">
+          <span class="overlay"></span>
+          <span class="category-name btn btn-outline">Moderno</span>
+        </a>
+      </div>
+
+      <div class="category-card futurista">
+        <a href="#" class="category-link">
+          <span class="overlay"></span>
+          <span class="category-name btn btn-outline">Futurista</span>
+        </a>
+      </div>
     </section>
 
     <!-- GRID COM PRODUTOS EM DESTAQUES -->

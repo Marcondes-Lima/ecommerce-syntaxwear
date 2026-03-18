@@ -1,11 +1,10 @@
 /* hero.css — estilos removidos a pedido do usuário */
 .hero-section {
-    background: url(../../imagens/banners/hero.jpg);
-    no-repeat: center;
+    background: url(../../imagens/banners/hero.jpg) no-repeat center;
     background-size: cover;
-
     height: 500px;
     position: relative;
+    border-radius: 20px;
 }
 
 .hero-overlay {
@@ -42,3 +41,33 @@
     font-weight: 400;
 }
 
+.btn {
+    font-size: 1.25rem;
+    width: 161px;
+    height: 48px;
+    border-radius: 25px;
+    color: #ffff;
+    font-weight: 400;
+    padding: 10px 20px;
+    transition: background-color 0.3s, border 0.3s;
+
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffff;
+    line-height: 23px;
+    
+}
+
+.btn-filled {
+    background-color: #ffff;
+    color: #6329a2;
+    
+}
+
+.btn:hover {
+    background-color: #6329a2;
+    color: #ffff;
+    border-color: #6329a2;
+}
